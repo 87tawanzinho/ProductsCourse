@@ -7,6 +7,7 @@
         <h2 class="text-2xl font-bold mb-3">{{ $produto->name }}</h2>
         <p class="text-gray-700 mb-3">{{  Str::limit($produto->description, 40) }}</p>
         <p class="text-green-500 font-semibold text-lg">${{ $produto->price }}</p>
+        <img src="{{$produto->image}}" />
         <button>Adicionar ao carrinho</button>
         
 @endsection
