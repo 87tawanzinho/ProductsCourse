@@ -14,7 +14,7 @@ class SiteController extends Controller
    }
 
    public function details($id) {
-      $produto = Produto::find($id);
+      $produto = Produto::where('id', $id)->first();
 
       return view("site.details", compact("produto"));
    }
